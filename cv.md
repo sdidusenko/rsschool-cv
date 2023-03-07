@@ -1,6 +1,7 @@
 ## [rsschool-cv](https://themrcrowley.github.io/rsschool-cv/)
 ***
 
+![my-photo](/myPhoto.jpg) 
 # Serhii Didusenko
 ***
 ## Junior Frontend Developer
