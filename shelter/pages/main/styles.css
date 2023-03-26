@@ -1,6 +1,7 @@
 body {
   width: 1310px;
   margin: 0 auto;
+  background: black;
 }
 
 .wrapper {
@@ -10,8 +11,7 @@ body {
 
 .start-screen {
   min-height: 100vh;
-  background: url(/shelter/assets/images/start-screen-background.jpg),
-  url(/shelter/assets/images/start-screen-gradient-background.png)
+  background: url(/shelter/assets/images/start-screen-gradient-background.png)
 }
 
 .header {
@@ -73,4 +73,43 @@ body {
 .start-screen-content {
   display: flex;
   padding: 90px 40px 0 40px;
+}
+
+.title-content {
+  margin: 163px 42px 243px 0;
+}
+
+.title-heading {
+  width: 310px;
+  margin: 0;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+
+.title-subheading {
+  margin: 42px 0;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #CDCDCD;
+}
+
+.title-button {
+  margin: 0;
+  padding: 15px 45px;
+  background: #F1CDB3;
+  border-radius: 100px;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
 }
