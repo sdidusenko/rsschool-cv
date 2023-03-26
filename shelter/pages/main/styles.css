@@ -224,3 +224,76 @@ body {
   letter-spacing: 0.06em;
   color: #545454;
 }
+
+.donation {
+  padding: 80px 183px 100px 183px;
+  background: #F6F6F6;
+}
+
+.donation-content {
+  height: 282px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.donation-dog-content {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.donation-heading {
+  width: 300px;
+  margin: 0;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.donation-subheading {
+  margin: 20px 0 15px 0;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.credit-card {
+  width: 319px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px 15px;
+  gap: 10px;
+  background: #F1CDB3;
+  border-radius: 9px;
+}
+
+.card-number {
+  margin: 0;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.legal-information {
+  margin-top: 20px;
+  font-family: 'Arial';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #B2B2B2;
+}
