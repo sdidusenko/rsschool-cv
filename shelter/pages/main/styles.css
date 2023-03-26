@@ -10,8 +10,7 @@ body {
 }
 
 .start-screen {
-  min-height: 100vh;
-  background: url(/shelter/assets/images/start-screen-gradient-background.png)
+ background: url(/shelter/assets/images/start-screen-gradient-background.png)
 }
 
 .header {
@@ -112,4 +111,59 @@ body {
   line-height: 130%;
   letter-spacing: 0.06em;
   color: #292929;
+}
+
+.about {
+  margin-top: -5px;
+  padding: 80px 40px 100px 40px;
+  background: #FFFFFF;
+}
+
+.about-content {
+  height: 408px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-pets-content {
+  margin: 14px 175px 14px 0;
+  width: 430px;
+}
+
+.about-pets-image {
+  width: 300px;
+  height: 408px;
+  margin: 0 120px 0 175px;
+}
+
+.about-pets-heading {
+  width: 370px;
+  margin: 0;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.about-pets-subheading {
+  margin: 25px 0;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #4C4C4C;
+}
+
+.about-pets-subheading-next {
+  margin: 0;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #4C4C4C;
 }
