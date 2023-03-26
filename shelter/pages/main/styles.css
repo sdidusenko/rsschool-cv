@@ -167,3 +167,60 @@ body {
   line-height: 160%;
   color: #4C4C4C;
 }
+
+.help {
+  padding: 80px 40px 100px 40px;
+  background: #FFFFFF;
+}
+
+.help-list-heading {
+  margin: 0;
+  width: 310px;
+  height: 90px;
+  text-align: center;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.help-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading-list {
+  width: 1026px;
+  display: flex;
+  column-gap: 119px;
+  row-gap: 55px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.help-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ico-list-item {
+  height: 60px;
+  width: 60px;
+}
+
+.name-list-item {
+  margin: 30px 0 0 0;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
