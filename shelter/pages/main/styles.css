@@ -475,7 +475,6 @@ body {
   margin-top: 32px;
 }
 
-
 @media(max-width: 768px) {
 .start-screen-content {
   flex-direction: column;
