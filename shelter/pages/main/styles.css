@@ -114,7 +114,6 @@ body {
 }
 
 .about {
-  margin-top: -5px;
   padding: 80px 40px 100px 40px;
   background: #FFFFFF;
 }
@@ -296,4 +295,91 @@ body {
   font-size: 12px;
   line-height: 18px;
   color: #B2B2B2;
+}
+
+.footer {
+  background: url(/shelter/assets/images/footer-gradient-background.png);
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 40px 0 40px;
+}
+
+.footer-mail,
+.footer-phone,
+.location-first,
+.location-second {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.contacts,
+.location {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .contacts {
+  row-gap: 40px;
+} */
+
+.marker {
+  width: 22px;
+  height: 32px;
+}
+
+.footer-title,
+.location-title {
+  margin: 0;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
+
+.footer-title {
+  width: 279px;
+}
+
+.location {
+  width: 302px;
+}
+
+.phone,
+.e-mail {
+  margin: 0;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+}
+
+.footer-phone,
+.footer-mail {
+  margin-top: 40px;
+}
+
+.city {
+  margin: 0;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+}
+
+.location-first {
+  margin-top: 34px;
+}
+
+.location-second {
+  margin-top: 32px;
 }
