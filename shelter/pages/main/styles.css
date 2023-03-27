@@ -9,7 +9,7 @@ body {
 }
 
 .start-screen {
- background: url(/shelter/assets/images/start-screen-gradient-background.png)
+ background: url('../../assets/images/start-screen-gradient-background.png')
 }
 
 .header {
@@ -389,7 +389,7 @@ body {
 }
 
 .footer {
-  background: url(/shelter/assets/images/footer-gradient-background.png);
+  background: url('../../assets/images/footer-gradient-background.png');
   display: flex;
   justify-content: space-between;
   padding: 40px 40px 0 40px;
