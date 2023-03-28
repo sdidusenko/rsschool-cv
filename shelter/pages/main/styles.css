@@ -605,5 +605,10 @@ padding: 80px 69px 100px 69px;
   row-gap: 65px;
   column-gap: 60px;
   justify-content: space-around;
+  background-size: cover;
+}
+.location-first,
+.location-second {
+  margin-top: 35px;
 }
 }
