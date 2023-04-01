@@ -1,3 +1,4 @@
+/*=================BASE SETTINGS=============*/
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -38,7 +39,6 @@ html {
 body {
   max-width: 128rem;
   margin: 0 auto;
-  font-family: Georgia, Arial, sans-serif, serif;
   font-size: 1.6rem;
   line-height: 1;
 }
@@ -62,14 +62,22 @@ li {
   flex-direction: column;
 }
 
-.header_container {
+/*=================SECTIONS SETTINGS=================*/
+.header {
   background: #f48b8b;
 }
 
 .main {
   flex: 1 1 auto;
+  background: #F6F6F6
 }
 
+.footer {
+  background: url('../../assets/images/footer-gradient-background.png');
+  background-size: cover;
+}
+
+/*====================HEADER====================*/
 .header-container__wrapper {
   padding: 3rem 0;
   display: flex;
@@ -126,9 +134,88 @@ li {
   text-underline-offset: 0.7rem;
 }
 
+/*====================PET SECTION=================*/
 .main__wrapper {
-  background: #F6F6F6
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 6rem;
+  padding-top: 8rem;
 }
+
+.pets-heading {
+  max-width: 40.1rem;
+  margin: auto;
+}
+
+.pets-head__title {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #545454;
+}
+
+.cards-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  row-gap: 3rem;
+  column-gap: 4rem;
+}
+
+.content__card {
+  background: #FAFAFA;
+  border-radius: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3rem;
+  padding-bottom: 3rem;
+}
+
+.card_pet-submit {
+  border: 0.2rem solid #F1CDB3;
+  border-radius: 10rem;
+  padding: 1.5rem 4.5rem;
+  background: transparent;
+  gap: 1rem;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  cursor: pointer;
+}
+
+.card_pet-name {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.cards-link {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
 
 
 
