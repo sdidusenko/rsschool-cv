@@ -64,7 +64,7 @@ li {
 
 /*=================SECTIONS SETTINGS=================*/
 .header {
-  background: #f48b8b;
+  background: #ffffff;
 }
 
 .main {
@@ -82,7 +82,6 @@ li {
   padding: 3rem 0;
   display: flex;
   flex-wrap: wrap;
-  row-gap: calc(0.8rem + 0.9 * ((100vw - 32rem) / (76 - 32)));
   justify-content: space-between;
   align-items: center;
   column-gap: 3rem;
@@ -114,6 +113,7 @@ li {
   justify-content: space-between;
   align-items: center;
   column-gap: 3.5rem;
+  row-gap: 1rem;
   flex-wrap: wrap;
 }
 
@@ -121,7 +121,7 @@ li {
   font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 160%;
   color: #545454;
 }
@@ -140,12 +140,7 @@ li {
   flex-direction: column;
   align-items: center;
   row-gap: 6rem;
-  padding-top: 8rem;
-}
-
-.pets-heading {
-  max-width: 40.1rem;
-  margin: auto;
+  padding: 8rem 0 7.6rem;
 }
 
 .pets-head__title {
@@ -208,28 +203,206 @@ li {
   cursor: pointer;
 }
 
+.navigations {
+  display: flex;
+  gap: 2rem;
+}
 
+.nav-button {
+  border-radius: 10rem;
+  background: transparent;
+  height: 5.2rem;
+  width: 5.2rem;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  }
 
+.button_innactive {
+  border: 0.2rem solid#CDCDCD;
+  color: #CDCDCD;
+}
 
+.button_active {
+  border: 0.2rem solid #F1CDB3;
+  color: #292929;
+}
 
+.navigations__current-page {
+  border: 0.2rem solid #F1CDB3;
+  background: #F1CDB3;
+}
 
+/*==================FOOTER===================*/
+.footer_container {
+  background: url('../../assets/images/footer-gradient-background.png');
+  display: flex;
+  justify-content: center;
+  padding: 4rem 4rem 0 4rem;
+  background-size: cover;
+  flex-wrap: wrap;
+  row-gap: 10rem;
+  column-gap: 15.9rem;
+}
 
+.footer-mail,
+.footer-phone,
+.location-first,
+.location-second {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
 
+.contacts,
+.location {
+  margin-top: 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
 
+.marker {
+  width: 2.2rem;
+  height: 3.2rem;
+}
 
+.footer-title,
+.location-title {
+  margin: 0;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
 
+.footer-title {
+  max-width: 27.9rem;
+}
 
+.location {
+  max-width: 30.2rem;
+}
 
+.phone,
+.e-mail {
+  margin: 0;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+}
 
+.footer-phone,
+.footer-mail {
+  margin-top: 4rem;
+}
 
+.city {
+  margin: 0;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+}
 
+.location-first {
+  margin-top: 3.4rem;
+}
 
+.location-second {
+  margin-top: 3.2rem;
+}
 
 @media screen and (max-width: 760px) {
   .nav-menu {
     flex-grow: 1;
     justify-content: space-around;
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.5rem 0;
    }
   
+}
+
+@media screen and (max-width: 768px) {
+  .footer_container {
+      flex-wrap: wrap;
+      padding: 1.4rem 3rem 0 3.3rem;
+      row-gap: 5.8rem;
+      column-gap: 0rem;
+      justify-content: space-around;
+      background-size: cover;
+    }
+  
+    .location-first,
+    .location-second {
+      margin-top: 3.1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+.footer {
+  padding: 3rem 1rem 0;
+  row-gap: 3.8rem;
+}
+
+.footer-title,
+.location-title {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.location-title {
+  max-width: 29.1rem;
+  margin: auto;
+}
+
+.contacts {
+  max-width: 23.2rem;
+  margin: 0;
+}
+
+.contacts {
+  max-width: 25.2rem;
+}
+
+.footer-phone {
+  align-self: center;
+}
+
+.location {
+  margin: 0;
+}
+
+.location-first {
+  margin-top: 3.8rem;
+}
+
+.location-second {
+  margin-top: 4.17rem;
+}
+
+.location-first,
+.location-second {
+  width: 30rem;
+}
+
+.location-head {
+  max-width: 30rem;
+}
+
+.footer-puppy {
+  max-width: 26rem;
+}
 }
