@@ -112,9 +112,10 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 3.5rem;
+  column-gap: 3.6rem;
   row-gap: 1rem;
   flex-wrap: wrap;
+  padding-bottom: 0.3rem;
 }
 
 .nav-link {
@@ -139,8 +140,8 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 6rem;
-  padding: 8rem 0 7.6rem;
+  row-gap: 4.5rem;
+  padding: 8rem 0 10rem;
 }
 
 .pets-head__title {
@@ -161,6 +162,7 @@ li {
   justify-content: space-evenly;
   row-gap: 3rem;
   column-gap: 4rem;
+  padding: 1.5rem 0;
 }
 
 .content__card {
@@ -176,7 +178,7 @@ li {
 .card_pet-submit {
   border: 0.2rem solid #F1CDB3;
   border-radius: 10rem;
-  padding: 1.5rem 4.5rem;
+  padding: 1.3rem 4.3rem;
   background: transparent;
   gap: 1rem;
   font-family: 'Georgia';
@@ -326,83 +328,120 @@ li {
   margin-top: 3.2rem;
 }
 
+
+
+/*====================MEDIA====================*/
+
+
 @media screen and (max-width: 760px) {
   .nav-menu {
     flex-grow: 1;
     justify-content: space-around;
     padding: 2rem 1.5rem 0;
    }
-  
-}
+ }
 
 @media screen and (max-width: 768px) {
+  [class*="_container"] {
+      max-width: 76.8rem;
+      margin: 0 auto;
+      padding: 0 3rem;
+    }
+
+  .main__wrapper {
+    row-gap: 1.5rem;
+    padding: 8rem 0 7.7rem;
+  }
+  
+  .cards-content {
+    justify-content: center;
+    max-height: 136.5rem;
+    overflow: hidden;
+    margin-bottom: 3.8rem;
+  }
+
+  .card_pet-name {
+    position: relative;
+    bottom: 1px;
+  }
+
   .footer_container {
-      flex-wrap: wrap;
-      padding: 1.4rem 3rem 0 3.3rem;
-      row-gap: 5.8rem;
-      column-gap: 0rem;
-      justify-content: space-around;
-      background-size: cover;
+    flex-wrap: wrap;
+    padding: 1.4rem 3rem 0 3.3rem;
+    row-gap: 6.3rem;
+    column-gap: 0rem;
+    justify-content: space-around;
+    background-size: cover;
     }
   
-    .location-first,
-    .location-second {
-      margin-top: 3.1rem;
+.location-first{
+  margin-top: 2.9rem;
+}
+
+.location-title {
+  margin-left: -2px;
+}
+
+  .location-first,
+  .location-second {
+    position: relative;
+    top: 0.35rem;
+    right: 0.3rem;
     }
 }
 
 @media screen and (max-width: 320px) {
-.footer {
-  padding: 3rem 1rem 0;
-  row-gap: 3.8rem;
+  .footer {
+    padding: 3rem 1rem 0;
+    row-gap: 3.8rem;
 }
 
-.footer-title,
-.location-title {
-  font-size: 2.5rem;
-  text-align: center;
+  .footer-title,
+  .location-title {
+    font-size: 2.5rem;
+    text-align: center;
 }
 
-.location-title {
-  max-width: 29.1rem;
-  margin: auto;
+  .location-title {
+    max-width: 29.1rem;
+    margin: auto;
 }
 
-.contacts {
-  max-width: 23.2rem;
-  margin: 0;
+  .contacts {
+    max-width: 23.2rem;
+    margin: 0;
 }
 
-.contacts {
-  max-width: 25.2rem;
+  .contacts {
+    max-width: 25.2rem;
 }
 
-.footer-phone {
-  align-self: center;
+  .footer-phone {
+    align-self: center;
 }
 
-.location {
-  margin: 0;
+  .location {
+    margin: 0;
 }
 
-.location-first {
-  margin-top: 3.8rem;
+  .location-first {
+    margin-top: 3.8rem;
 }
 
-.location-second {
-  margin-top: 4.17rem;
+  .location-second {
+    margin-top: 4.17rem;
 }
 
-.location-first,
-.location-second {
-  width: 30rem;
+  .location-first,
+  .location-second {
+    width: 30rem;
 }
 
-.location-head {
-  max-width: 30rem;
+  .location-head {
+    max-width: 30rem;
 }
 
-.footer-puppy {
-  max-width: 26rem;
+  .footer-puppy {
+    max-width: 26rem;
 }
 }
