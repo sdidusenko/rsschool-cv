@@ -175,7 +175,7 @@ li {
   padding-bottom: 3rem;
 }
 
-.card_pet-submit {
+.card-pet-submit {
   border: 0.2rem solid #F1CDB3;
   border-radius: 10rem;
   padding: 1.3rem 4.3rem;
@@ -453,7 +453,7 @@ li {
   [class*="_container"] {
       max-width: 32rem;
       margin: 0 auto;
-      padding: 0 2rem;
+      padding: 0 1rem;
     }
 
   .nav-menu {
@@ -462,4 +462,93 @@ li {
   .navigations {
     gap: 1rem
   }
+
+  .header-container__wrapper {
+    padding: 3rem 1rem;
+      }
+
+  .pets-head__title {
+    font-size: 2.5rem;
+    }
+
+    .main__wrapper {
+      row-gap: 2.85rem;
+      padding: 4.15rem 0 4.27rem;
+    }
+
+ .cards-content {
+     margin-bottom: 2.55rem;
+ }
+
+    .footer {
+      padding: 3rem 1rem 0;
+      row-gap: 3.8rem;
+    }
+  
+    .footer-title,
+    .location-title {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  
+    .location-title {
+      max-width: 29.1rem;
+      margin: auto;
+    }
+  
+    .contacts {
+      max-width: 23.2rem;
+      margin: 0;
+    }
+  
+    .contacts {
+      max-width: 25.2rem;
+    }
+  
+    .footer-phone {
+      align-self: center;
+    }
+  
+    .location {
+      margin: 0;
+    }
+  
+    .location-first {
+      margin-top: 3.8rem;
+    }
+  
+    .location-second {
+      margin-top: 4.17rem;
+    }
+  
+    .location-first,
+    .location-second {
+      width: 30rem;
+    }
+    .location-first {
+      top: 0.1rem;
+      right: 0;
+    }
+   
+.location-second {
+  top: 0.1rem;
+    right: 0;
+}
+
+.location-second {
+  top: -0.1rem;
+  right: 0;
+}
+
+    .location-head {
+      max-width: 30rem;
+    }
+  
+    .footer-puppy {
+      max-width: 26rem;
+    }
+    
+  .footer_container {
+   row-gap: 3.9rem;
+}
 }
