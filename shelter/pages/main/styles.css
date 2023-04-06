@@ -816,7 +816,7 @@ padding: 8.1rem 6.9rem 10rem 7.1rem;
   margin-bottom: calc(1.2rem + 3 * ((100vw - 32rem) / (76 - 32)));
 }
 
-/* .nav-menu {
+ .nav-menu {
   display: flex;
   justify-content: space-evenly;
   row-gap: 0.3rem;
