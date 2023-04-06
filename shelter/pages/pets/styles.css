@@ -1,5 +1,7 @@
 /*=================BASE SETTINGS=============*/
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   border: 0;
@@ -85,7 +87,7 @@ li {
   justify-content: space-between;
   align-items: center;
   column-gap: 3rem;
-  }
+}
 
 .logo-title {
   font-family: 'Georgia';
@@ -135,7 +137,7 @@ li {
 .nav-link_active {
   color: #292929;
   text-decoration: underline;
-  text-decoration-color:#F1CDB3;
+  text-decoration-color: #F1CDB3;
   text-decoration-thickness: 0.3rem;
   text-underline-offset: 0.7rem;
 }
@@ -274,7 +276,7 @@ li {
   line-height: 115%;
   letter-spacing: 0.06em;
   cursor: pointer;
-  }
+}
 
 .button_innactive {
   border: 0.2rem solid#CDCDCD;
@@ -390,24 +392,26 @@ li {
     flex-grow: 1;
     justify-content: space-around;
     padding: 2rem 1.5rem 0;
-    }
-  .navigations {
-    gap: calc(1rem + 1 * ((100vw - 32rem) / (76 - 32)));;
   }
- }
+
+  .navigations {
+    gap: calc(1rem + 1 * ((100vw - 32rem) / (76 - 32)));
+    ;
+  }
+}
 
 @media screen and (max-width: 768px) {
   [class*="_container"] {
-      max-width: 76.8rem;
-      margin: 0 auto;
-      padding: 0 3rem;
-    }
+    max-width: 76.8rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+  }
 
   .main__wrapper {
     row-gap: 1.5rem;
     padding: 8rem 0 7.7rem;
   }
-  
+
   .cards-content {
     justify-content: center;
     max-height: 136.5rem;
@@ -427,180 +431,182 @@ li {
     column-gap: 0rem;
     justify-content: space-around;
     background-size: cover;
-    }
-  
-.location-first{
-  margin-top: 2.9rem;
-}
+  }
 
-.location-title {
-  margin-left: -2px;
-}
+  .location-first {
+    margin-top: 2.9rem;
+  }
+
+  .location-title {
+    margin-left: -2px;
+  }
 
   .location-first,
   .location-second {
     position: relative;
     top: 0.35rem;
     right: 0.3rem;
-    }
+  }
 }
 
 @media screen and (max-width: 320px) {
   .footer {
     padding: 3rem 1rem 0;
     row-gap: 3.8rem;
-}
+  }
 
   .footer-title,
   .location-title {
     font-size: 2.5rem;
     text-align: center;
-}
+  }
 
   .location-title {
     max-width: 29.1rem;
     margin: auto;
-}
+  }
 
   .contacts {
     max-width: 23.2rem;
     margin: 0;
-}
+  }
 
   .contacts {
     max-width: 25.2rem;
-}
+  }
 
   .footer-phone {
     align-self: center;
-}
+  }
 
   .location {
     margin: 0;
-}
+  }
 
   .location-first {
     margin-top: 3.8rem;
-}
+  }
 
   .location-second {
     margin-top: 4.17rem;
-}
+  }
 
   .location-first,
   .location-second {
     width: 30rem;
-}
+  }
 
   .location-head {
     max-width: 30rem;
-}
+  }
 
   .footer-puppy {
     max-width: 26rem;
-}
+  }
 }
 
 @media screen and (max-width: 320px) {
   [class*="_container"] {
-      max-width: 32rem;
-      margin: 0 auto;
-      padding: 0 1rem;
-    }
+    max-width: 32rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
 
   .nav-menu {
     display: none;
   }
+
   .navigations {
     gap: 1rem
   }
 
   .header-container__wrapper {
     padding: 3rem 1rem;
-      }
+  }
 
   .pets-head__title {
     font-size: 2.5rem;
-    }
+  }
 
-    .main__wrapper {
-      row-gap: 2.85rem;
-      padding: 4.15rem 0 4.27rem;
-    }
+  .main__wrapper {
+    row-gap: 2.85rem;
+    padding: 4.15rem 0 4.27rem;
+  }
 
- .cards-content {
-     margin-bottom: 2.55rem;
- }
+  .cards-content {
+    margin-bottom: 2.55rem;
+  }
 
-    .footer {
-      padding: 3rem 1rem 0;
-      row-gap: 3.8rem;
-    }
-  
-    .footer-title,
-    .location-title {
-      font-size: 2.5rem;
-      text-align: center;
-    }
-  
-    .location-title {
-      max-width: 29.1rem;
-      margin: auto;
-    }
-  
-    .contacts {
-      max-width: 23.2rem;
-      margin: 0;
-    }
-  
-    .contacts {
-      max-width: 25.2rem;
-    }
-  
-    .footer-phone {
-      align-self: center;
-    }
-  
-    .location {
-      margin: 0;
-    }
-  
-    .location-first {
-      margin-top: 3.8rem;
-    }
-  
-    .location-second {
-      margin-top: 4.17rem;
-    }
-  
-    .location-first,
-    .location-second {
-      width: 30rem;
-    }
-    .location-first {
-      top: 0.1rem;
-      right: 0;
-    }
-   
-.location-second {
-  top: 0.1rem;
+  .footer {
+    padding: 3rem 1rem 0;
+    row-gap: 3.8rem;
+  }
+
+  .footer-title,
+  .location-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .location-title {
+    max-width: 29.1rem;
+    margin: auto;
+  }
+
+  .contacts {
+    max-width: 23.2rem;
+    margin: 0;
+  }
+
+  .contacts {
+    max-width: 25.2rem;
+  }
+
+  .footer-phone {
+    align-self: center;
+  }
+
+  .location {
+    margin: 0;
+  }
+
+  .location-first {
+    margin-top: 3.8rem;
+  }
+
+  .location-second {
+    margin-top: 4.17rem;
+  }
+
+  .location-first,
+  .location-second {
+    width: 30rem;
+  }
+
+  .location-first {
+    top: 0.1rem;
     right: 0;
-}
+  }
 
-.location-second {
-  top: -0.1rem;
-  right: 0;
-}
+  .location-second {
+    top: 0.1rem;
+    right: 0;
+  }
 
-    .location-head {
-      max-width: 30rem;
-    }
-  
-    .footer-puppy {
-      max-width: 26rem;
-    }
-    
+  .location-second {
+    top: -0.1rem;
+    right: 0;
+  }
+
+  .location-head {
+    max-width: 30rem;
+  }
+
+  .footer-puppy {
+    max-width: 26rem;
+  }
+
   .footer_container {
-   row-gap: 3.9rem;
-}
+    row-gap: 3.9rem;
+  }
 }
