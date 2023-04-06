@@ -10,13 +10,14 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   font-size: 1.6rem;
+ 
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  overflow: hidden;
+ 
   min-height: 100%;
 }
 
@@ -110,9 +111,6 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .nav-menu {
-    display: none;
-  }
 
   .menu-icon {
     z-index: 5;
@@ -132,7 +130,7 @@ body {
     position: absolute;
     height: 10%;
     width: 100%;
-    transition: all 0.3s ease0s;
+    transition: all 0.3s;
     background-color: #F1CDB3;
   }
 
@@ -1145,4 +1143,73 @@ body {
     display: flex;
     gap: 7rem;
   }
+}
+
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+ 
+  .nav-menu {
+       /* display: none; */
+    
+    position: fixed;
+    right: -32rem;
+    top: 0;
+    width: 32rem;
+    height: 100vh;
+    background: #292929;
+    background-size: cover;
+    visibility: hidden;
+    transition: transform .5s, visibility .5s;
+    will-change: transform;
+  }
+
+  .header.open .nav-menu {
+    transform: translateX(-100%);
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    transition: all 1s;
+  }
+
+.header.open .menu-icon {
+  position: fixed;
+  top: 5.2rem;
+  right: 3rem;
+}
+
+  .header.open .menu-icon span{
+    transform: translateY(0) translateX(0) rotate(-90deg);
+    transition: all 0.3s;
+  }
+  .header.open .menu-icon::after{
+    transform: rotate(-90deg);
+    left: -1.1rem;
+    bottom: 1rem;
+    transition: all 0.3s;
+  }
+  .header.open .menu-icon::before{
+    transform: rotate(-90deg);
+    left: 1.1rem;
+    top: 0.95rem;
+    transition: all 0.3s;
+  }
+
+ .header.open .nav-link {
+    position: relative;
+    bottom: 1.2rem;
+    display: block;
+    padding: 0;
+    font-size: 3.2rem;
+    transition: all 1s;
+ }
+
+ body.lock {
+  overflow: hidden;
+ }
+
 }
