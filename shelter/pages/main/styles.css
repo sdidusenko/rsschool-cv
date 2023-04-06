@@ -828,7 +828,7 @@ padding: 8.1rem 6.9rem 10rem 7.1rem;
 
 .nav-link {
   display: inline-flex;
-} */
+}
 
 .header {
   padding: 3rem 3rem 2rem 3rem;
@@ -1128,4 +1128,4 @@ body {
     display: flex;
     gap: 7rem;
   }
-}
+} 
