@@ -110,7 +110,7 @@ body {
   text-underline-offset: 0.7rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
   .menu-icon {
     z-index: 5;
@@ -825,19 +825,6 @@ body {
     margin-bottom: calc(1.2rem + 3 * ((100vw - 32rem) / (76 - 32)));
   }
 
-  /* .nav-menu {
-  display: flex;
-  justify-content: space-evenly;
-  row-gap: 0.3rem;
-  column-gap: calc(1.5rem + 2.1 * ((100vw - 32rem) / (76 - 32)));
-  flex-wrap: wrap;
-  flex-shrink: 0;
-  width: 100%;
-}
-.nav-link {
-  display: inline-flex;
-} */
-
   .header {
     padding: 3rem 3rem 2rem 3rem;
   }
@@ -850,10 +837,7 @@ body {
     max-width: 32rem;
   }
 
-  .nav-menu {
-    display: none;
-  }
-
+  
   .header {
     padding: 3rem 2rem 0 2rem;
   }
@@ -1147,12 +1131,22 @@ body {
 
 
 
-@media (min-width: 320px) and (max-width: 767px) {
-
+@media screen and (max-width: 768px) {
+.nav-link {
+    position: relative;
+    bottom: 1.2rem;
+    display: block;
+    padding: 0;
+    font-size: 3.2rem;
+    transition: all 0.5s;
+  }
  
   .nav-menu {
-       /* display: none; */
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
     position: fixed;
     right: -32rem;
     top: 0;
@@ -1161,7 +1155,7 @@ body {
     background: #292929;
     background-size: cover;
     visibility: hidden;
-    transition: transform .5s, visibility .5s;
+    transition: transform 0.5s, visibility 0.5s;
     will-change: transform;
   }
 
@@ -1173,43 +1167,34 @@ body {
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    transition: all 1s;
+    transition: all 0.5s;
   }
 
-.header.open .menu-icon {
-  position: fixed;
-  top: 5.2rem;
-  right: 3rem;
-}
+  .header.open .menu-icon {
+    position: fixed;
+    top: 5.2rem;
+    right: 3rem;
+  }
 
   .header.open .menu-icon span{
     transform: translateY(0) translateX(0) rotate(-90deg);
-    transition: all 0.3s;
+    transition: all 0.5s;
   }
   .header.open .menu-icon::after{
     transform: rotate(-90deg);
     left: -1.1rem;
     bottom: 1rem;
-    transition: all 0.3s;
+    transition: all 0.5s;
   }
   .header.open .menu-icon::before{
     transform: rotate(-90deg);
     left: 1.1rem;
     top: 0.95rem;
-    transition: all 0.3s;
+    transition: all 0.5s;
   }
 
- .header.open .nav-link {
-    position: relative;
-    bottom: 1.2rem;
-    display: block;
-    padding: 0;
-    font-size: 3.2rem;
-    transition: all 1s;
- }
-
- body.lock {
-  overflow: hidden;
- }
+  body.lock {
+    overflow: hidden;
+  }
 
 }

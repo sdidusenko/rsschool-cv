@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
  
   document.getElementById("burger").addEventListener("click", function () {
-    document.querySelector(".header").classList.toggle("open")
+    document.querySelector(".header-container__wrapper").classList.toggle("open")
   })
 });
 
@@ -12,7 +12,7 @@ document.getElementById("burger").addEventListener("click", function () {
 
 window.addEventListener('keydown', (e) => {
   if (e.key === "Escape") {
-    document.querySelector(".header").classList.remove("open")
+    document.querySelector(".header-container__wrapper").classList.remove("open")
     document.body.classList.remove("lock")
   }
 });
@@ -27,7 +27,7 @@ document.getElementById("burger").addEventListener('click', event => {
 document.body.addEventListener('click', event => {
   if (event._isClickWithInMenu) return;
   // Действие при клике
-  document.querySelector(".header").classList.remove("open")
+  document.querySelector(".header-container__wrapper").classList.remove("open")
   document.body.classList.remove("lock")
 });
 
