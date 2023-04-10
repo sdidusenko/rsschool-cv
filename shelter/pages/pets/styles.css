@@ -7,6 +7,7 @@
   border: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 img {
@@ -27,7 +28,9 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: #545454;
+ 
 }
+
 
 html,
 body {
@@ -142,10 +145,34 @@ li {
   text-underline-offset: 0.7rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .nav-menu {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    position: fixed;
+    right: -32rem;
+    top: 0;
+    width: 32rem;
+    height: 100vh;
+    background: #ededed;
+    background-size: cover;
+    visibility: hidden;
+    transition: transform 0.5s, visibility 0.5s;
+    will-change: transform;
+    z-index: 1;
   }
+
+ .nav-link {
+    position: relative;
+    bottom: 1.2rem;
+    display: block;
+    padding: 0;
+    font-size: 3.2rem;
+    transition: all 0.5s;
+}
 
   .menu-icon {
     z-index: 5;
@@ -165,7 +192,7 @@ li {
     position: absolute;
     height: 10%;
     width: 100%;
-    transition: all 0.3s ease0s;
+    transition: all 0.5s;
     background-color: rgb(0, 0, 0);
   }
 
@@ -186,6 +213,55 @@ li {
     top: 45%;
     transition: scale(1) translate(0, -50%);
   }
+
+
+.header-container__wrapper.open .nav-menu {
+  transform: translateX(-100%);
+  visibility: visible;
+  transition: all 0.5s;
+}
+
+.header-container__wrapper.open .menu-icon {
+  position: fixed;
+  top: 5.2rem;
+  right: 3rem;
+}
+
+.header-container__wrapper.open .menu-icon span {
+  transform: translateY(0) translateX(0) rotate(-90deg);
+  transition: all 0.5s;
+}
+
+.header-container__wrapper.open .menu-icon::after {
+  transform: rotate(-90deg);
+  left: -1.1rem;
+  bottom: 1rem;
+  transition: all 0.5s;
+}
+
+.header-container__wrapper.open .menu-icon::before {
+  transform: rotate(-90deg);
+  left: 1.1rem;
+  top: 0.95rem;
+  transition: all 0.5s;
+}
+
+
+body.lock {
+  overflow: hidden;
+}
+
+body.lock .wrapper::before {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  background: rgba(41, 41, 41, 0.6);
+  position: fixed;
+  background-size: cover;
+  top: 0;
+  left: 0;
+}
+
 }
 
 /*====================PET SECTION=================*/
@@ -388,12 +464,6 @@ li {
 
 
 @media screen and (max-width: 760px) {
-  .nav-menu {
-    flex-grow: 1;
-    justify-content: space-around;
-    padding: 2rem 1.5rem 0;
-  }
-
   .navigations {
     gap: calc(1rem + 1 * ((100vw - 32rem) / (76 - 32)));
     ;
@@ -467,14 +537,11 @@ li {
   }
 
   .contacts {
-    max-width: 23.2rem;
+    max-width: 25.2rem;
     margin: 0;
   }
 
-  .contacts {
-    max-width: 25.2rem;
-  }
-
+  
   .footer-phone {
     align-self: center;
   }
@@ -512,11 +579,7 @@ li {
     padding: 0 1rem;
   }
 
-  .nav-menu {
-    display: none;
-  }
-
-  .navigations {
+   .navigations {
     gap: 1rem
   }
 
