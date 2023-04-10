@@ -27,9 +27,9 @@
           <div id="burger" class="menu-icon"><span></span></div>
           <div id="menu" class="nav-menu">
             <a class="nav-link nav-link_active" href="#">About the shelter</a>
-            <a class="nav-link nav-link-active" href="../pets/index.html">Our pets</a>
-            <a class="nav-link nav-link-active" href="#help">Help the shelter</a>
-            <a class="nav-link nav-link-active" href="#footer">Contacts</a>
+            <a class="nav-link" href="../pets/index.html">Our pets</a>
+            <a class="nav-link" href="#help">Help the shelter</a>
+            <a class="nav-link" href="#footer">Contacts</a>
           </div>
         </header>
         <div class="start-screen-content">
@@ -71,22 +71,54 @@
             <h3>Our friends who <span class="pets-head-title">are looking for a house</span></h3>
           </div>
           <div class="pets-slider">
-            <div class="left-arrow"><button><img class="left-arrow-img" src="../../assets/icons/aroow_l.png"
-                  alt="ico-left"></button></div>
+            <div class="left-arrow"><button id="btn-left"><img class="left-arrow-img"
+                  src="../../assets/icons/aroow_l.png" alt="ico-left"></button></div>
+
+
             <div class="pet-slides">
               <div class="pet-slide pet__slide-first"><img src="../../assets/images/pets-katrine.png" alt="pet-img">
                 <p class="pet-name">Katrine</p><button class="pet-info-button">Learn more</button>
+                <div class="modal">
+                  <div class="modal__box"></div>
+                </div>
               </div>
               <div class="pet-slide pet__slide-second"><img src="../../assets/images/pets-jennifer.png" alt="pet-img">
                 <p class="pet-name">Jennifer</p><button class="pet-info-button">Learn more</button>
+                <div class="modal">
+                  <div class="modal__box"></div>
+                </div>
               </div>
               <div class="pet-slide invisible pet__slide-third"><img src="../../assets/images/pets-woody.png"
                   alt="pet-img">
                 <p class="pet-name">Woody</p><button class="pet-info-button">Learn more</button>
+
+                <div id="katrine" class="modal">
+                  <div class="modal__box">
+                    <img src="../../assets/images/pets-katrine.png" alt="modal-img" class="modal-photo">
+                    <div class="modal-head">
+                      <h3 class="modal-title">Katrine</h3>
+                      <p class="modal-subhead">Dog - Labrador</p>
+                    </div>
+                    <p class="modal-text">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a
+                      new forever home. This girl really enjoys
+                      being able to go outside to run and play, but won't hesitate to play up a storm in the house if
+                      she has all of her
+                      favorite toys.</p>
+                    <ul class="modal-description">
+                      <li class="modal-description-item"><span class="desctiption-item-part"></span></li>
+                      <li class="modal-description-item"><span class="desctiption-item-part"></span></li>
+                      <li class="modal-description-item"><span class="desctiption-item-part"></span></li>
+                      <li class="modal-description-item"><span class="desctiption-item-part"></span></li>
+                    </ul>
+
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="right-arrow"><button><img class="right-arrow-img" src="../../assets/icons/arrow_r.png"
-                  alt="ico-right"></button></div>
+
+
+            <div class="right-arrow"><button id="btn-right"><img class="right-arrow-img"
+                  src="../../assets/icons/arrow_r.png" alt="ico-right"></button></div>
           </div>
           <div class="invisible-arrows">
             <button class="left-arrow320px"><img src="../../assets/icons/aroow_l.png" alt="ico-left"></button>
@@ -200,7 +232,7 @@
       </footer>
     </main>
   </div>
-<script src="./index.js"></script>
+  <script src="./index.js"></script>
 </body>
 
 

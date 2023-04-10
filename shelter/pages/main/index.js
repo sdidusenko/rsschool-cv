@@ -1,14 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
- 
+
   document.getElementById("burger").addEventListener("click", function () {
     document.querySelector(".header").classList.toggle("open")
   })
+  document.querySelector(".nav-link").addEventListener("click", function () {
+    document.querySelector(".header").classList.remove("open")
+  })
+
+
 });
 
 
 document.getElementById("burger").addEventListener("click", function () {
   document.body.classList.toggle("lock")
- })
+})
 
 window.addEventListener('keydown', (e) => {
   if (e.key === "Escape") {
@@ -17,12 +22,15 @@ window.addEventListener('keydown', (e) => {
   }
 });
 
-document.getElementById("menu").addEventListener('click', event => {
+
+document.querySelector(".nav-menu").addEventListener('click', event => {
   event._isClickWithInMenu = true;
 });
+
 document.getElementById("burger").addEventListener('click', event => {
   event._isClickWithInMenu = true;
 });
+
 
 document.body.addEventListener('click', event => {
   if (event._isClickWithInMenu) return;
@@ -33,4 +41,8 @@ document.body.addEventListener('click', event => {
 
 
 
-  console.log('По макету совпадает в соответствии/n с требованиями. Валидацию проходит./n Изза мелких неточностей оцениваю свою работу на 97%') 
+
+
+
+
+console.log('По макету совпадает в соответствии/n с требованиями. Валидацию проходит./n Изза мелких неточностей оцениваю свою работу на 97%') 
